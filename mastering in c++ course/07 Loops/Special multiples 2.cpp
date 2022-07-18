@@ -6,25 +6,25 @@
 using namespace std;
 
 int main(){
-    int t;      // number of test cases
-    cin >> t;
+    int n;
+    cin >> n;
 
-    int n;      // number of each test case group
-    int i;      // number of inputs
-    int min;    // minimum value
-
-    while (t>0){
-        cin >> n;
-        while(n>0){
-            min=i;
-            cin >> i;
-            if(i<min)   min=i;
-            n--;
+    int c = 0;                  // number of outputs
+    int cv= 0;                  // values of outputs
+    while (c < n){
+        if (cv % 4 != 0){
+            cout << cv << " ";
+            cv+=3;
+            c++;
         }
-        cout << min << " " << endl ;
-        t--;
+        else {
+            cv+=3;
+            continue;
+        }
+
     }
 
     return 0;
 }
+
 
