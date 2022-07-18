@@ -22,6 +22,8 @@ int main()
             max2=max;
             max=array[i];
         }
+        else if (max2 < array[i])
+            max2 = array[i];
     }
 
     cout << max << " " << max2;      // print outputs;
