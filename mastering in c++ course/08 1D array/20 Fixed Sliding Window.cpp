@@ -1,3 +1,9 @@
+/*
+Assume a list: 1 0 3 -4 2 -6 9 ● Sliding window (sublist): 3 ● Let’s print all windows of length 3 and their sum ○ 1 0 3 ⇒ sum = 4 ○
+0 3 -4 ⇒ sum = -1
+○ ○ ○
+3 -4 2 ⇒ sum = 1 -4 2 -6 ⇒ sum = -8 2 -6 9 ⇒ sum = 5
+*/
 #include <iostream>
 using namespace std;
 
